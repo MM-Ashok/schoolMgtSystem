@@ -1,0 +1,90 @@
+<?php
+
+namespace App\Http\Controllers\Auth;
+
+use App\User;
+use App\Course;
+use App\Skill;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
+
+class TeacherRegister extends Controller
+{
+    
+    
+    public function teacherRegister(){
+        $course = Course::get();
+        $skill = Skill::get();
+        return view('auth.teacherregister', compact('course', 'skill'));
+    }
+    public function studentRegister(){
+        $course = Course::get();
+        $skill = Skill::get();
+        return view('auth.studentregister', compact('course', 'skill'));
+    }
+    public function teacherCreate(Request $request)
+    {
+       //dd($request->all());
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8|confirmed',
+            'phone' => 'required',
+            'experience' => 'required',
+            'address' => 'required',
+            'courses_details' => 'required',
+            'skills' => 'required'
+        ]);
+
+        User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'phone' => $request->phone,
+            'experience' => $request->experience,
+            'address' => $request->address,
+            'courses_details' => $request->courses_details,
+            'skills' => $request->skills
+        ]);
+
+        if(\Auth::attempt($request->only('email','password'))){
+            return redirect('/page/home');
+        }
+        return redirect('teacher-register')->withErrors('Error');
+    }
+
+
+    public function studentCreate(Request $request)
+    {
+       //dd($request->all());
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'phone' => ['required'],
+            'experience' => ['required'],
+            'address' => ['required'],
+            'courses_details' => ['required'],
+            'skills' => ['required'],
+        ]);
+
+        User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'phone' => $request->phone,
+            'experience' => $request->experience,
+            'address' => $request->address,
+            'courses_details' => $request->courses_details,
+            'skills' => $request->skills
+        ]);
+
+        if(\Auth::attempt($request->only('email','password'))){
+            return redirect('/page/home');
+        }
+        return redirect('student-register')->withErrors('Error');
+    }
+}
+   
