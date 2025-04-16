@@ -52,3 +52,18 @@ Use the following npm scripts to build assets:
 npm run dev     # For development
 npm run prod    # For production
 ````
+🌍 Environment Configuration<br>
+Explain the important .env variables to configure.<br>
+
+````bash
+APP_NAME=MyProject
+APP_ENV=local
+APP_URL=http://localhost
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_db
+DB_USERNAME=your_user
+DB_PASSWORD=your_password
+````
