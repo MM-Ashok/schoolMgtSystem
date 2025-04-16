@@ -67,3 +67,27 @@ DB_DATABASE=your_db
 DB_USERNAME=your_user
 DB_PASSWORD=your_password
 ````
+Project Overview
+
+This project is built using the Laravel PHP Framework.
+Features:
+
+    Admin Panel: Fully implemented admin section for managing the application.
+
+    Dynamic Content: Admin can edit and manage page content dynamically.
+
+    Multiple User Roles: Includes roles for Admin, Teacher, and Student.
+
+    Teacher Skills: Teachers can display their skills for students to view.
+
+    Authentication: Login and logout functionality for Teachers, Students, and Super Admins.
+
+    Pages:
+
+        Home Page: Welcome page of the website.
+
+        About Us Page: Information about the organization or platform.
+
+        FAQ Page: Frequently asked questions section.
+
+        Teachers Page: Detailed teacher profiles with profile images, social media links (Facebook, Twitter, Instagram), and ratings.
