@@ -40,15 +40,15 @@ composer install
 npm install
 cp .env.example .env
 php artisan key:generate
-```bash
-<br><br>
+````
 🧪 Running the App Locally<br>
+bash````
 php artisan serve
 npm run dev
-
+````
 🚀 Build Commands
-
 Use the following npm scripts to build assets:
-
+bash````
 npm run dev     # For development
 npm run prod    # For production
+````
