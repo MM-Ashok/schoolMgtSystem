@@ -40,6 +40,7 @@ composer install
 npm install
 cp .env.example .env
 php artisan key:generate
+```bash
 <br><br>
 🧪 Running the App Locally<br>
 php artisan serve
