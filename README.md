@@ -3,7 +3,7 @@ Requirement *
 
 PHP version:: 8.1 or Greater then 8.1.x
 
-Framework :: Laravel
+Framework :: Laravel 7
 
 Modules Dependencies ::
 - cross-env with version ^5.1
