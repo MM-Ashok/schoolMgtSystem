@@ -42,13 +42,13 @@ cp .env.example .env
 php artisan key:generate
 ````
 🧪 Running the App Locally<br>
-bash````
+````bash
 php artisan serve
 npm run dev
 ````
 🚀 Build Commands
 Use the following npm scripts to build assets:
-bash````
+````bash
 npm run dev     # For development
 npm run prod    # For production
 ````
