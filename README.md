@@ -6,7 +6,7 @@
 ✅ Framework
     Laravel Version: Laravel 7.x
 
-📦 Module Dependencies
+📦 Module Dependencies<br>
 The following Node.js modules are required for the project to function correctly:
 Package	Version
 cross-env	^5.1
