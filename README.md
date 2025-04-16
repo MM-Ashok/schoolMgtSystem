@@ -67,27 +67,31 @@ DB_DATABASE=your_db
 DB_USERNAME=your_user
 DB_PASSWORD=your_password
 ````
-Project Overview
+📘 Project Overview<br>
+This project is built using the PHP Laravel framework and features a robust admin panel for managing dynamic website content. Below are the core features implemented in the system:
+    🔐 User Authentication
+        Login and logout functionality is available for Super Admin, Teachers, and Students.
+    🧑‍🏫 Multi-Role Access Control
+        Different roles are defined for Admin, Teachers, and Students, each with their own privileges.
+    🛠️ Admin Dashboard
+        A full-featured admin section that allows management of dynamic page content and user roles.
+    🌐 Dynamic Page Content
+        Content for various pages like Home, About Us, FAQ, and Teachers can be managed directly from the admin panel.
 
-This project is built using the Laravel PHP Framework.
-Features:
+📄 Public Pages
+Includes standard public-facing pages such as:
 
-    Admin Panel: Fully implemented admin section for managing the application.
+    Home
 
-    Dynamic Content: Admin can edit and manage page content dynamically.
+    About Us
 
-    Multiple User Roles: Includes roles for Admin, Teacher, and Student.
+    FAQ
 
-    Teacher Skills: Teachers can display their skills for students to view.
+👩‍🏫 Teachers Directory
+A dedicated Teachers page displays teacher profiles along with:
 
-    Authentication: Login and logout functionality for Teachers, Students, and Super Admins.
+    Profile image
 
-    Pages:
+    Facebook, Twitter, and Instagram links
 
-        Home Page: Welcome page of the website.
-
-        About Us Page: Information about the organization or platform.
-
-        FAQ Page: Frequently asked questions section.
-
-        Teachers Page: Detailed teacher profiles with profile images, social media links (Facebook, Twitter, Instagram), and ratings.
+    Skillset and Ratings
