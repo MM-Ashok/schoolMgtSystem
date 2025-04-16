@@ -1,5 +1,6 @@
 # schoolMgtSystem
 Requirement *
+
 PHP version:: 8.1 or Greater then 8.1.x
 Framework:: Laravel
 
