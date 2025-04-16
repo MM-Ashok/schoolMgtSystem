@@ -3,9 +3,9 @@ Requirement *
 
 PHP version:: 8.1 or Greater then 8.1.x
 
-Framework:: Laravel
+Framework :: Laravel
 
-Dependencies Modules::
+Modules Dependencies ::
 - cross-env with version ^5.1
 - jquery with version ^3.2
 - jquery-ui with version ^1.12.1
@@ -16,4 +16,4 @@ Dependencies Modules::
 - sass with version ^1.15.2
 - sass-loader with version ^7.1.0
 - tailwindcss with version ^1.0.1
-- vue-template-compiler with version ^2.6.10"
+- vue-template-compiler with version ^2.6.10
