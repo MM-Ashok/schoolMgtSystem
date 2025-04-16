@@ -1,11 +1,11 @@
-📋 System Requirements
-✅ PHP
-    Required Version: PHP 8.1 or higher
-    (Minimum supported: PHP 8.1.x)
-
-✅ Framework
-    Laravel Version: Laravel 7.x
-
+📋 System Requirements<br>
+✅ PHP<br>
+    Required Version: PHP 8.1 or higher<br>
+    (Minimum supported: PHP 8.1.x)<br>
+<br>
+✅ Framework<br>
+    Laravel Version: Laravel 7.x<br>
+<br>
 📦 Module Dependencies<br>
 The following Node.js modules are required for the project to function correctly:<br>
 Package	Version<br>
