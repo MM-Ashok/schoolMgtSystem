@@ -1,8 +1,8 @@
 # 📋 System Requirements
 
 ### ✅ PHP
-- **Required Version:** PHP 8.1 or higher  
-- *(Minimum supported: PHP 8.1.x)*
+- **Required Version:** PHP 7.4 or higher  
+- *(Minimum supported: PHP 7.4.x)*
 
 ### ✅ Framework
 - **Laravel Version:** Laravel 7.x
